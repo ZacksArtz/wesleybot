@@ -8,6 +8,9 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) => {
     res.render('pages/index')
 })
+app.get('/sami', (req, res) => {
+    res.render('pages/sami')
+})
 
 app.listen(port, () => {
     // will echo 'Our app is running on http://localhost:5000 when run locally'
